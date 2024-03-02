@@ -5,6 +5,8 @@ package com.alvarobajo.banco.models;
  * Implementa la interfaz Imprimible para proporcionar una representación de cadena.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public class Persona implements Imprimible {
 

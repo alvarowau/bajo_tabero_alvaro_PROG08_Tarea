@@ -5,6 +5,8 @@ package com.alvarobajo.banco.models;
  * Extiende de la clase abstracta CuentaCorriente.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public class CuentaCorrienteEmpresa extends CuentaCorriente {
 
@@ -71,7 +73,7 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente {
      */
     @Override
     public String devolverInfoString() {
-        return String.format("Cuenta Corriente Empresa\n%s\nTipo de Interés Descubierto: %.2f\nMáximo Descubierto: %.2f",
+        return String.format("Cuenta Corriente Empresa\n%s\nTasa de Interés Descubierto: %.2f\nMáximo Descubierto: %.2f",
                 super.devolverInfoString(), tipoInteresDescubierto, maximoDescubierto);
     }
 }

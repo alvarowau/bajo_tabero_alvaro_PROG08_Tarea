@@ -6,6 +6,8 @@ package com.alvarobajo.banco.models;
  * Las clases concretas deben extender esta clase para crear tipos específicos de cuentas bancarias.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public abstract class CuentaBancaria implements Imprimible {
 
@@ -90,7 +92,7 @@ public abstract class CuentaBancaria implements Imprimible {
     @Override
     public String devolverInfoString() {
         StringBuilder info = new StringBuilder();
-        info.append("Tipo de cuenta: ").append(this.getClass().getSimpleName()).append("\n");
+        info.append("Tipo de cuenta: ").append(getClass().getSimpleName()).append("\n");
         info.append("Titular: ").append(titular.getNombre()).append(" ").append(titular.getApellido1());
         if (!titular.getApellido2().isEmpty()) {
             info.append(" ").append(titular.getApellido2());

@@ -5,6 +5,8 @@ package com.alvarobajo.banco.models;
  * Extiende de la clase abstracta CuentaCorriente.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public class CuentaCorrientePersonal extends CuentaCorriente {
 
@@ -50,7 +52,7 @@ public class CuentaCorrientePersonal extends CuentaCorriente {
      */
     @Override
     public String devolverInfoString() {
-        return String.format("Cuenta Corriente Personal\n%s\nComisión de Mantenimiento: %.2f",
+        return String.format("Cuenta Corriente Personal\n%s\nComisión de Mantenimiento: %.2f €",
                 super.devolverInfoString(), comisionMantenimiento);
     }
 }

@@ -6,6 +6,11 @@ import com.alvarobajo.banco.models.Persona;
 /**
  * Clase que proporciona métodos para la creación de objetos Persona con datos ingresados por el usuario.
  *
+ * <p>Esta clase incluye métodos para crear una instancia de Persona con datos ingresados por el usuario,
+ * asegurándose de que los valores cumplan con ciertos criterios.</p>
+ *
+ * <p>La capitalización de palabras se realiza utilizando la biblioteca Apache Commons Lang.</p>
+ *
  * @author Álvaro Bajo Tabero
  */
 public class CrearPersona {

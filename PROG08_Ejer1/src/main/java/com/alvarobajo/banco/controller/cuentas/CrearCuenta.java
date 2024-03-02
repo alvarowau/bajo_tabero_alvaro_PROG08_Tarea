@@ -11,6 +11,7 @@ import java.util.Random;
 
 /**
  * Clase que proporciona métodos para la creación de diferentes tipos de cuentas bancarias.
+ * Permite la creación de cuentas de ahorro, cuentas corrientes personales y cuentas corrientes de empresa.
  *
  * @author Álvaro Bajo Tabero
  */

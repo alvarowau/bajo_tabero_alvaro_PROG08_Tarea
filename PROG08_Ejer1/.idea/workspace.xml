@@ -19,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -42,7 +42,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alvar/OneDrive/Escritorio/bajo_tabero_alvaro_PROG08_Tarea",
+    "last_opened_file_path": "C:/Users/alvar/OneDrive/Escritorio/bajo_tabero_alvaro_PROG08_Tarea/PROG08_Ejer2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,6 +99,7 @@
       <workItem from="1709227473358" duration="393000" />
       <workItem from="1709389467870" duration="1718000" />
       <workItem from="1709391470113" duration="670000" />
+      <workItem from="1709394506205" duration="1765000" />
     </task>
     <task id="LOCAL-00001" summary="terminadoo">
       <option name="closed" value="true" />

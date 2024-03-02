@@ -5,6 +5,8 @@ package com.alvarobajo.banco.models;
  * Implementada por clases que desean ser impresas de manera legible.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public interface Imprimible {
 

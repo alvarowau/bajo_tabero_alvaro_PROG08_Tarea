@@ -12,6 +12,8 @@ import com.alvarobajo.banco.models.CuentaBancaria;
  * Permite abrir cuentas, ver información de cuentas, realizar operaciones y más.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public class Menu {
 

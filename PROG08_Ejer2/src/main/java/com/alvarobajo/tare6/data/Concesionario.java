@@ -36,7 +36,7 @@ public class Concesionario {
     public String insertarVehiculo(Vehiculo vehiculo) {
         if (!matriculaExiste(vehiculo.getMatricula())) {
             vehiculos.add(vehiculo);
-            return vehiculo.toString() + "\n Vehículo agregado con éxito";
+            return vehiculo.toString() + "\nVehículo agregado con éxito";
         } else {
             return "Error: La matrícula ya existe en el concesionario.";
         }

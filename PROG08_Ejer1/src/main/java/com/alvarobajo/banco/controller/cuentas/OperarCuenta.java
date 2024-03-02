@@ -8,6 +8,12 @@ import java.text.DecimalFormat;
  * Clase que proporciona métodos para realizar operaciones en una cuenta bancaria,
  * como retiros, consultas de saldo e ingresos.
  *
+ * <p>Esta clase incluye métodos para realizar retiros de efectivo, consultar el saldo actual
+ * de la cuenta y realizar ingresos. Los mensajes de salida son definidos como constantes para
+ * facilitar su modificación y mantenimiento.</p>
+ *
+ * <p>El formato de moneda se realiza utilizando la clase `DecimalFormat`.</p>
+ *
  * @author Álvaro Bajo Tabero
  */
 public class OperarCuenta {

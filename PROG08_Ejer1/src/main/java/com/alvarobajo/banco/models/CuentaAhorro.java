@@ -1,10 +1,13 @@
 package com.alvarobajo.banco.models;
 
 /**
- * Clase que representa una cuenta de ahorro.
- * Extiende de la clase abstracta CuentaBancaria.
+ * Clase que representa una cuenta de ahorro en el sistema bancario.
+ * Esta clase extiende la funcionalidad de la clase abstracta CuentaBancaria,
+ * proporcionando características específicas para cuentas de ahorro.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public class CuentaAhorro extends CuentaBancaria {
 
@@ -16,7 +19,7 @@ public class CuentaAhorro extends CuentaBancaria {
      * @param titular     Persona titular de la cuenta.
      * @param saldo       Saldo inicial de la cuenta.
      * @param iban        Número de cuenta IBAN asociado a la cuenta.
-     * @param tipoInteres Tasa de interés asociada a la cuenta de ahorro.
+     * @param tipoInteres Tasa de interés asociada a la cuenta de ahorro (en porcentaje).
      */
     public CuentaAhorro(Persona titular, double saldo, String iban, double tipoInteres) {
         super(titular, saldo, iban);
@@ -26,7 +29,7 @@ public class CuentaAhorro extends CuentaBancaria {
     /**
      * Obtiene la tasa de interés asociada a la cuenta de ahorro.
      *
-     * @return Tasa de interés de la cuenta de ahorro.
+     * @return Tasa de interés de la cuenta de ahorro en porcentaje.
      */
     public double getTipoInteres() {
         return tipoInteres;
@@ -35,7 +38,7 @@ public class CuentaAhorro extends CuentaBancaria {
     /**
      * Establece la tasa de interés asociada a la cuenta de ahorro.
      *
-     * @param tipoInteres Nueva tasa de interés de la cuenta de ahorro.
+     * @param tipoInteres Nueva tasa de interés de la cuenta de ahorro en porcentaje.
      */
     public void setTipoInteres(double tipoInteres) {
         this.tipoInteres = tipoInteres;

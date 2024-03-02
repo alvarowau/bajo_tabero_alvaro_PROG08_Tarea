@@ -9,6 +9,11 @@ import java.util.List;
 /**
  * Clase que proporciona métodos para mostrar información detallada de cuentas bancarias.
  *
+ * <p>Esta clase incluye métodos para mostrar la información de una cuenta bancaria por titular, por IBAN,
+ * para un IBAN específico y para mostrar un listado de todas las cuentas disponibles en el banco.</p>
+ *
+ * <p>Los mensajes de entrada son definidos como constantes para facilitar su modificación y mantenimiento.</p>
+ *
  * @author Álvaro Bajo Tabero
  */
 public class MostrarCuenta {
@@ -85,5 +90,4 @@ public class MostrarCuenta {
             System.out.println("No hay cuentas registradas en el banco.");
         }
     }
-
 }

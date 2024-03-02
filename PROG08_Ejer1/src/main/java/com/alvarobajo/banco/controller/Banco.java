@@ -23,8 +23,6 @@ public class Banco {
         cuentas = new ArrayList<>();
     }
 
-
-
     /**
      * Abre una nueva cuenta bancaria y la agrega al banco.
      *
@@ -59,7 +57,6 @@ public class Banco {
         return false;
     }
 
-
     /**
      * Lista todas las cuentas registradas en el banco.
      */
@@ -73,8 +70,6 @@ public class Banco {
             System.out.println("No hay cuentas registradas en el banco.");
         }
     }
-
-
 
     /**
      * Busca una cuenta bancaria por el nombre del titular.

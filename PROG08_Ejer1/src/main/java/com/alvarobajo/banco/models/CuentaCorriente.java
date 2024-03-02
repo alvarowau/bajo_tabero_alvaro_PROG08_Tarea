@@ -5,6 +5,8 @@ package com.alvarobajo.banco.models;
  * Extiende de la clase abstracta CuentaBancaria.
  *
  * @author Álvaro Bajo Tabero
+ * @version 1.0
+ * @since 2024-03-02
  */
 public abstract class CuentaCorriente extends CuentaBancaria {
 
@@ -48,7 +50,12 @@ public abstract class CuentaCorriente extends CuentaBancaria {
      */
     @Override
     public String devolverInfoString() {
-        return String.format("Cuenta Corriente\nTitular: %s\nSaldo: %.2f\nIBAN: %s\nLista de Entidades Autorizadas: %s",
-                getTitular().devolverInfoString(), getSaldo(), getIban(), listaEntidades);
+        StringBuilder info = new StringBuilder();
+        info.append("Cuenta Corriente:\n");
+        info.append("Titular: ").append(getTitular().devolverInfoString()).append("\n");
+        info.append("Saldo: ").append(getSaldo()).append("\n");
+        info.append("IBAN: ").append(getIban()).append("\n");
+        info.append("Lista de Entidades Autorizadas: ").append(listaEntidades);
+        return info.toString();
     }
 }

@@ -19,7 +19,7 @@ public class LecturaTeclado implements AutoCloseable {
      * @param mensaje Mensaje a mostrar al usuario.
      * @return Texto no vacío ingresado por el usuario.
      */
-    private static String escaneoEntrada(String mensaje) {
+    private static String escanearEntrada(String mensaje) {
         System.out.println(mensaje);
         return entradaTeclado.nextLine();
     }
@@ -33,7 +33,7 @@ public class LecturaTeclado implements AutoCloseable {
     public static String recogerTexto(String mensaje) {
         String texto;
         do {
-            texto = escaneoEntrada(mensaje);
+            texto = escanearEntrada(mensaje);
         } while (texto.isEmpty());
         return texto;
     }
@@ -47,8 +47,8 @@ public class LecturaTeclado implements AutoCloseable {
     public static int recogerEntero(String mensaje) {
         String recogido;
         do {
-            recogido = escaneoEntrada(mensaje);
-        } while (!isNumeroEntero(recogido));
+            recogido = escanearEntrada(mensaje);
+        } while (!esNumeroEntero(recogido));
         return Integer.parseInt(recogido);
     }
 
@@ -61,20 +61,20 @@ public class LecturaTeclado implements AutoCloseable {
     public static double recogerDecimal(String mensaje) {
         String recogido;
         do {
-            recogido = escaneoEntrada(mensaje);
-        } while (!isNumeroDecimal(recogido));
+            recogido = escanearEntrada(mensaje);
+        } while (!esNumeroDecimal(recogido));
         return Double.parseDouble(recogido);
     }
 
     /**
      * Verifica si la cadena proporcionada es un número entero.
      *
-     * @param numeroRecogido Cadena a verificar.
+     * @param cadenaNumero Cadena a verificar.
      * @return true si la cadena es un número entero; false, en caso contrario.
      */
-    private static boolean isNumeroEntero(String numeroRecogido) {
+    private static boolean esNumeroEntero(String cadenaNumero) {
         try {
-            Integer.parseInt(numeroRecogido);
+            Integer.parseInt(cadenaNumero);
             return true;
         } catch (NumberFormatException e) {
             return false;
@@ -84,14 +84,14 @@ public class LecturaTeclado implements AutoCloseable {
     /**
      * Verifica si la cadena proporcionada es un número decimal.
      *
-     * @param numeroRecogido Cadena a verificar.
+     * @param cadenaNumero Cadena a verificar.
      * @return true si la cadena es un número decimal; false, en caso contrario.
      */
-    private static boolean isNumeroDecimal(String numeroRecogido) {
+    private static boolean esNumeroDecimal(String cadenaNumero) {
         try {
             // Permitir "," o "." como separadores decimales
-            numeroRecogido = numeroRecogido.replace(",", ".");
-            Double.parseDouble(numeroRecogido);
+            cadenaNumero = cadenaNumero.replace(",", ".");
+            Double.parseDouble(cadenaNumero);
             return true;
         } catch (NumberFormatException e) {
             return false;
@@ -105,6 +105,4 @@ public class LecturaTeclado implements AutoCloseable {
     public void close() {
         entradaTeclado.close();
     }
-
-
 }
